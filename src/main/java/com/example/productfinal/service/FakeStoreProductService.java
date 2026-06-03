@@ -4,6 +4,7 @@ import com.example.productfinal.Exceptions.InvalidProductIdException;
 import com.example.productfinal.dtos.FakeStoreProductDto;
 import com.example.productfinal.models.Category;
 import com.example.productfinal.models.Product;
+import com.example.productfinal.models.ProductSearch;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -89,6 +90,10 @@ return p1;
     @Override
     public void deleteProduct() {
 
+    }
+    @Override
+    public List<ProductSearch> searchProducts(String query) {
+        return List.of();
     }
 }
 

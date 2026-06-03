@@ -19,6 +19,5 @@ public class Category extends BaseModel {
         this.title = title;
     }
 
-  //  private long id;
     private String title;
 }

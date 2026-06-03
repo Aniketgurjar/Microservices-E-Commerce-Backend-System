@@ -2,6 +2,7 @@ package com.example.productfinal.service;
 
 import com.example.productfinal.Exceptions.InvalidProductIdException;
 import com.example.productfinal.models.Product;
+import com.example.productfinal.models.ProductSearch;
 
 import java.util.List;
 
@@ -11,4 +12,5 @@ public interface ProductService {
     Product updateProduct(Long id,Product product);
     Product createProduct(Product product);
     void deleteProduct();
+    List<ProductSearch> searchProducts(String query);
 }
